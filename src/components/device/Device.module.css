@@ -1,0 +1,112 @@
+.deviceItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.deviceItem:hover {
+    background-color: rgba(143, 143, 143, 0.3);
+}
+
+.modal__wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 600px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.deviceInfo__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.deviceInfo__item div:first-of-type {
+    align-self: flex-start;
+}
+
+.deviceInfo__item div:last-of-type {
+    width: 400px;
+    word-break: break-all;
+    text-align: right;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    height: 30px;
+    border: 1px solid rgb(143, 143, 143);
+    transition: border, box-shadow .3s;
+}
+
+input:hover,
+input:focus {
+    border-color: #4630de;
+    box-shadow: 0 0 20px 5px rgba(70, 48, 222, 0.5);
+}
+
+button {
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid rgb(143, 143, 143);
+    background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 5px 0 5px 5px;
+    cursor: pointer;
+    transition: background-color, box-shadow, color .3s;
+}
+
+.buttonSuccess:hover {
+    background-color: green;
+    border-color: green;
+    box-shadow: 0 0 20px 5px rgba(0, 128, 0, 0.5);
+    color: white;
+}
+
+.buttonDelete:hover {
+    background-color: red;
+    border-color: red;
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.5);
+    color: white;
+}
+
+.buttonPrimary:hover {
+    background-color: #4630de;
+    border-color: #4630de;
+    box-shadow: 0 0 20px 5px rgba(70, 48, 222, 0.5);
+    color: white;
+}
+
+.modal__title {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.device__list__inner {
+    height: calc(100vh - 160px);
+    overflow: auto;
+}

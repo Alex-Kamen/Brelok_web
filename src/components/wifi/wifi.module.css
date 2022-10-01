@@ -1,0 +1,83 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:first-of-type td {
+    border-bottom: 1px solid rgb(143, 143, 143);
+    height: 30px;
+}
+
+td {
+    padding: 5px;
+}
+
+table tr {
+    transition: background-color .3s;
+}
+
+table tr:hover {
+    background-color: rgba(143, 143, 143, .3);
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    height: 30px;
+    border: 1px solid rgb(143, 143, 143);
+    transition: border, box-shadow .3s;
+}
+
+input:hover,
+input:focus {
+    border-color: #4630de;
+    box-shadow: 0 0 20px 5px rgba(70, 48, 222, 0.5);
+}
+
+button {
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid rgb(143, 143, 143);
+    background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 5px 0 5px 5px;
+    cursor: pointer;
+    transition: background-color, box-shadow .3s;
+}
+
+svg {
+    transition: fill .3s;
+    fill: black;
+}
+
+button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.buttonSuccess:hover, .buttonSuccess:hover svg {
+    background-color: green;
+    border-color: green;
+    box-shadow: 0 0 20px 5px rgba(0, 128, 0, 0.5);
+    fill: white;
+}
+
+.buttonDelete:hover, .buttonDelete:hover svg {
+    background-color: red;
+    border-color: red;
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.5);
+    fill: white;
+}
+
+.buttonPrimary:hover, .buttonPrimary:hover svg {
+    background-color: #4630de;
+    border-color: #4630de;
+    box-shadow: 0 0 20px 5px rgba(70, 48, 222, 0.5);
+    fill: white;
+    color: white;
+}

@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    font-family: sans-serif;
+}
+
+html, body, #root, .App, #mapId {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding:0;
+}
+
+.leaflet-bar {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    z-index: 10000;
+    border-right: 1px solid #8f8f8f;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform .3s;
+}
+
+.sidebar__icon {
+    position: fixed;
+    left: 35px;
+    top: 35px;
+    z-index: 10000;
+}
+
+.user__login,
+.device__list,
+.auth__title {
+    text-align: left;
+    padding: 0 20px;
+    margin: 15px 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.device__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.device__list div {
+    cursor: pointer;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    color: #4630de;
+    border: 1px solid #4630de;
+    border-radius: 50%;
+    transition: background-color, border-color, box-shadow, color .3s;
+}
+
+
+.device__list div:hover {
+    background-color: #4630de;
+    border-color: #4630de;
+    box-shadow: 0 0 20px 5px rgba(70, 48, 222, 0.5);
+    color: white;
+}
+
+.sidebar__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logout__icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.logout__icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar__title {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger__icon {
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+.burger__icon svg {
+    height: 30px;
+    width: 30px;
+}
+
+.close.sidebar {
+    transform: translate(-400px);
+}
+
+.open.sidebar {
+    transform: translate(0);
+}
